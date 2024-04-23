@@ -17,21 +17,13 @@ function ProductFilters() {
         setProductList(json.products);
         setFilteredProducts(json.products);
         setLoading(false);
-        clearTimeout(timeoutId);
       } catch (error) {
         setError(error);
         setLoading(false);
       }
     };
 
-    const timeoutId = setTimeout(() => {
-      setLoading(false);
-      setError(new Error("Timeout: Could not fetch data within 10 seconds."));
-    }, 10000); // 10 second timeout
-
     fetchData();
-
-    return () => clearTimeout(timeoutId);
   }, []);
 
   //initializing and handling the cart
