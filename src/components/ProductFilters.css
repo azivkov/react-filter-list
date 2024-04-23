@@ -1,0 +1,30 @@
+.product-list ul {
+  list-style-type: none;
+}
+
+.chosen-products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.chosen-products th {
+  background-color: lightgray;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.chosen-products td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.chosen-products img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-wrapper {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
